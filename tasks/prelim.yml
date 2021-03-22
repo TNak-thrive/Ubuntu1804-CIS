@@ -375,3 +375,9 @@
   register: users_password_change_date_in_future
   changed_when: False
   check_mode: false
+
+- name: "PRELIM | Remove libxtst6"
+  apt:
+    name: libxtst6
+    state: absent
+  check_mode: false

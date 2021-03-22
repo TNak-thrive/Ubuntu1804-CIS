@@ -30,8 +30,8 @@ ubuntu1804cis_rule_1_1_1_6: true
 ubuntu1804cis_rule_1_1_1_7: true
 ubuntu1804cis_rule_1_1_1_8: false
 ubuntu1804cis_rule_1_1_2: false
-ubuntu1804cis_rule_1_1_3: true
-ubuntu1804cis_rule_1_1_4: true
+ubuntu1804cis_rule_1_1_3: false
+ubuntu1804cis_rule_1_1_4: false
 ubuntu1804cis_rule_1_1_5: false
 ubuntu1804cis_rule_1_1_6: true
 ubuntu1804cis_rule_1_1_7: true
