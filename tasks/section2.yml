@@ -645,21 +645,21 @@
       - services
       - patch
       - rule_2.2.14
-
-- name: "SCORED | 2.2.15 | PATCH | Ensure mail transfer agent is configured for local-only mode"
-  lineinfile:
-      dest: /etc/postfix/main.cf
-      regexp: "^(#)?inet_interfaces"
-      line: "inet_interfaces = localhost"
-  when:
-      - not ubuntu1804cis_is_mail_server
-      - postfix_installed.rc == 0
-      - ubuntu1804cis_rule_2_2_15
-  tags:
-      - level1
-      - scored
-      - patch
-      - rule_2.2.15
+#
+#- name: "SCORED | 2.2.15 | PATCH | Ensure mail transfer agent is configured for local-only mode"
+#  lineinfile:
+#      dest: /etc/postfix/main.cf
+#      regexp: "^(#)?inet_interfaces"
+#      line: "inet_interfaces = localhost"
+#  when:
+#      - not ubuntu1804cis_is_mail_server
+#      - postfix_installed.rc == 0
+#      - ubuntu1804cis_rule_2_2_15
+#  tags:
+#      - level1
+#      - scored
+#      - patch
+#      - rule_2.2.15
 
 - name: "SCORED | 2.2.16 | PATCH | Ensure rsync service is not enabled "
   service:
