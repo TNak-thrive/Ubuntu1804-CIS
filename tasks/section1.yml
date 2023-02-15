@@ -641,21 +641,21 @@
       - patch
       - rule_1.3.3
 
-- name: "SCORED | 1.4.1 | PATCH | Ensure AIDE is installed (install nullmailer instead of postfix)"
-  apt:
-      name:
-          - nullmailer
-      state: present
-      install_recommends: false
-  when:
-      - ubuntu1804cis_rule_1_4_1
-      - not postfix_installed.rc == 0
-  tags:
-      - level1
-      - scored
-      - aide
-      - patch
-      - rule_1.4.1
+#- name: "SCORED | 1.4.1 | PATCH | Ensure AIDE is installed (install nullmailer instead of postfix)"
+#  apt:
+#      name:
+#          - nullmailer
+#      state: present
+#      install_recommends: false
+#  when:
+#      - ubuntu1804cis_rule_1_4_1
+#      - not postfix_installed.rc == 0
+#  tags:
+#      - level1
+#      - scored
+#      - aide
+#      - patch
+#      - rule_1.4.1
 
 - name: "SCORED | 1.4.1 | PATCH | Ensure AIDE is installed"
   apt:
